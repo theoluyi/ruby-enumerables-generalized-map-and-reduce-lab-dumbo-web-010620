@@ -18,11 +18,11 @@ def reduce(s, sp=nil)
   if sp
     accum = sp
     i = 0
-  else # otherwise 
+  else # otherwise set accum to be the first element in array s, and increment ahead to index 1 
     accum = s[0]
     i = 1
   end
-  while i < s.length
+  while i < s.length 
     binding.pry
     accum = yield(accum, s[i])
     i += 1
