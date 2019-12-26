@@ -24,7 +24,7 @@ def reduce(s, sp=nil)
   end
   while i < s.length 
     binding.pry
-    accum = yield(accum, s[i])
+    accum = yield(accum, s[i]) # set accum to the code block applied to two arguments, accum and array s at index i 
     i += 1
   end
   accum
