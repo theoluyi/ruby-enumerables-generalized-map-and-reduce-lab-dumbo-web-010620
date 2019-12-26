@@ -13,10 +13,12 @@ end
 
 
 def reduce(s, sp=nil)
+  
+  # if starting point (sp) is defined, set accumulated_sum to that amount
   if sp
     accum = sp
     i = 0
-  else
+  else # otherwise 
     accum = s[0]
     i = 1
   end
